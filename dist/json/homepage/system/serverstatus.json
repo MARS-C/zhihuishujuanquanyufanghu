@@ -1,0 +1,8 @@
+{
+    "CpuUsageName": "CPU", 
+    "CpuUsage": 90, 
+    "MemUsageName": "内存", 
+    "MemUsage": 80, 
+    "DiskUsageName": "硬盘", 
+    "DiskUsage": 60
+}

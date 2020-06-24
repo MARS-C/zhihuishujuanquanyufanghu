@@ -1,0 +1,30 @@
+[
+    {
+        "LabelName": "地址", 
+        "LabelValue": "10.26.15.218", 
+        "icon":"iconfont icon-banben",
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "LabelName": "版本", 
+        "LabelValue": "5.0.1.154", 
+        "icon":"iconfont icon-banben",
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "LabelName": "系统", 
+        "LabelValue": "Windows Server 2012", 
+        "icon":"iconfont icon-banben",
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "LabelName": "日期", 
+        "LabelValue": "2020年06月08日", 
+        "icon":"iconfont icon-banben",
+        "code": "", 
+        "name": ""
+    }
+]

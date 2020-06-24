@@ -1,0 +1,1023 @@
+[
+    {
+        "name": "Homepage",
+        "showName": "主页",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-0",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "name": "Endpoint|Encrypt",
+                "groupShowName": "系统",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "SysOverView",
+                        "showName": "系统概况",
+                        "pagePath": "dlp/Console/homepage/System/SystemOverView.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situation"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "EPDataRisk|EPDLP",
+                "groupShowName": "终端态势",
+                "icon": "iconfont icon-qushifenxi",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "RiskSituation",
+                        "showName": "风险态势",
+                        "pagePath": "dlp/Console/homepage/Risk/RiskSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationrisk"
+                        ]
+                    },
+                    {
+                        "name": "AssertsSituation",
+                        "showName": "资产态势",
+                        "pagePath": "dlp/Console/homepage/Asserts/DataAssertsSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationassert"
+                        ]
+                    },
+                    {
+                        "name": "EventEventView",
+                        "showName": "事件态势",
+                        "pagePath": "dlp/Console/homepage/Event/EventSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationevent"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "EPDataRisk|EPDLP",
+                "groupShowName": "数据地图",
+                "icon": "iconfont icon-shuju-2",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "RiskDataMap",
+                        "showName": "风险地图",
+                        "pagePath": "dlp/Console/homepage/DataMap/Risk/RiskSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationrisk"
+                        ]
+                    },
+                    {
+                        "name": "AssertDataMap",
+                        "showName": "资产地图",
+                        "pagePath": "dlp/Console/homepage/DataMap/Asset/DataAssertSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationassert"
+                        ]
+                    },
+                    {
+                        "name": "EventDataMap",
+                        "showName": "事件地图",
+                        "pagePath": "dlp/Console/homepage/DataMap/Event/EventSituation.jsp",
+                        "level": "2",
+                        "popedomList": [
+                            "situationevent"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "situation"
+        ]
+    },
+    {
+        "name": "DataCenter",
+        "showName": "统计",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-1",
+        "level": "0",
+        "selected": false,
+        "functionGroupList": [
+            {
+                "name": "Detect",
+                "groupShowName": "决策统计",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EndpointStats",
+                        "showName": "终端",
+                        "level": "2",
+                        "pagePath": "dlp/Console/datacenter/endpoint/EndpointStats.jsp",
+                        "popedomList": [
+                            "statagent"
+                        ]
+                    },
+                    {
+                        "name": "MonitorEventView",
+                        "showName": "网络",
+                        "level": "2",
+                        "pagePath": "dlp/Console/datacenter/EventView.jsp?type=monitor",
+                        "popedomList": [
+                            "statmon"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect",
+                "groupShowName": "数据分析",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EventAnalysis",
+                        "showName": "终端事件",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/analysis/EventAnalysis.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    },
+                    {
+                        "name": "MonitorEventAnalysis",
+                        "showName": "网络事件",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/analysis/MonitorEventAnalysis.jsp?type=monitor",
+                        "popedomList": [
+                            "analymon"
+                        ]
+                    },
+                    {
+                        "name": "DataAssertsAnalysis",
+                        "showName": "终端资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/analysis/DataAsserts/AssertsAnalysis.jsp",
+                        "popedomList": [
+                            "analyassert"
+                        ]
+                    },
+                    {
+                        "name": "ServerDataAssertsAnalysis",
+                        "showName": "服务器资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/analysis/DataAsserts/AssertsAnalysis.jsp?type=scan",
+                        "popedomList": [
+                            "analyassert"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "DSG",
+                "groupShowName": "数据资产动态",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "AssetDynamicsOverview",
+                        "showName": "总视角",
+                        "level": "2",
+                        "pagePath": "dlp/Console/assetDynamics/overview/assetDynamicsOverview.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    },
+                    {
+                        "name": "AssetDynamicsStorage",
+                        "showName": "存储视角",
+                        "level": "2",
+                        "pagePath": "dlp/Console/assetDynamics/storageRelation/storageRelationTab.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    },
+                    {
+                        "name": "AssetDynamicsUser",
+                        "showName": "用户视角",
+                        "level": "2",
+                        "pagePath": "dlp/Console/assetDynamics/userRelation/userRelationTab.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    },
+                    {
+                        "name": "AssetDynamicsFile",
+                        "showName": "文件跟踪",
+                        "level": "2",
+                        "pagePath": "dlp/Console/assetDynamics/fileRelation/fileRelationOverView.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    },
+                    {
+                        "name": "AssetDynamicsStorageMgr",
+                        "showName": "存储实体",
+                        "level": "2",
+                        "pagePath": "dlp/Console/assetDynamics/storagemgr/StorageListMgr.jsp",
+                        "popedomList": [
+                            "analyagent"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "statistics"
+        ]
+    },
+    {
+        "name": "policy",
+        "showName": "策略",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-2",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "groupShowName": "策略集",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "PolicySet",
+                        "showName": "策略集管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/policy/PolicySetMgrTab.jsp",
+                        "popedomList": [
+                            "plyset"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect",
+                "groupShowName": "内容检测策略元素",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "monitorPly",
+                        "showName": "自定义检测策略",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/MonitorPlyMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "predefMonPly",
+                        "showName": "系统内置检测策略",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/policy/PolicyList/PredefineDetectPolicyList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "RespandRule",
+                        "showName": "响应规则",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/ActionPolicy/ActionPolicyMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect",
+                "groupShowName": "数据分级分类",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "customDataClass",
+                        "showName": "自定义分类",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/DataClassRule/CustomDataClassList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "predefineDataClass",
+                        "showName": "系统内置分类",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/DataClassRule/PredefineDataClassList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "ClassManager",
+                        "showName": "一级分类管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Lib/FileClass/ClassManagerList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "divide",
+                        "showName": "",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "DataIDMgr",
+                        "showName": "数据标识符",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Lib/DataID/DataIdentifierList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "DictionaryMgr",
+                        "showName": "词典库",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Dictionary/DictionaryList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "ScriptMgr",
+                        "showName": "脚本库",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Script/ScriptList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "FileFingerPrint",
+                        "showName": "文件指纹特征",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Lib/FileClass/FileFingerPrintList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "FileClusterPrint",
+                        "showName": "文件机器学习特征",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/Lib/FileClass/FileClusterList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "EPDLP",
+                "groupShowName": "终端监控配置",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "devmonconfply",
+                        "showName": "监控配置策略",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/DeviceConfigMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "DeviceApplication",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/DeviceApplication/DeviceApplicationViewType.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Endpoint|Encrypt",
+                "groupShowName": "文件管控策略元素",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "encPly",
+                        "showName": "文件管控策略",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/EncryptPlyTemplateMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "encProLib",
+                        "showName": "管控应用程序库",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/processmgr/ProcessLibMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect|Encrypt",
+                "groupShowName": "资源库",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "FileTypeClassMgr",
+                        "showName": "文件格式",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/monitor/FileType/FileTypeList.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    },
+                    {
+                        "name": "encBusinessLib",
+                        "showName": "业务系统库",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/businessmgr/BusinessMgr.jsp",
+                        "popedomList": [
+                            "plytemplate"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "policy"
+        ]
+    },
+    {
+        "name": "management",
+        "showName": "管理",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-3",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "name": "Endpoint|Encrypt",
+                "groupShowName": "用户",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "UserAndDeviceMgr",
+                        "showName": "用户及设备管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/UserAndDeviceMgr.jsp",
+                        "popedomList": [
+                            "useragent"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "EPScan",
+                "groupShowName": "终端发现",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EndpointScanMgr",
+                        "showName": "终端扫描管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-scan/EPScanMgrMainPage.jsp",
+                        "popedomList": [
+                            "devscanmgr"
+                        ]
+                    },
+                    {
+                        "name": "EndpointScanStat",
+                        "showName": "终端扫描审计",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-scan/EPScanStatMainPage.jsp",
+                        "popedomList": [
+                            "devscanhis"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Monitor",
+                "groupShowName": "网路",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "ServerList",
+                        "showName": "网络服务器",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/network/ServerListMgr.jsp",
+                        "popedomList": [
+                            "mongateconfig"
+                        ]
+                    },
+                    {
+                        "name": "MonProtocalConfig",
+                        "showName": "网络协议",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/network/MonProtocolMgr.jsp",
+                        "popedomList": [
+                            "monprotocol"
+                        ]
+                    },
+                    {
+                        "name": "MonSignCert",
+                        "showName": "网关证书",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/network/MonSignCertMgr.jsp",
+                        "popedomList": [
+                            "mongateconfig"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Discover",
+                "groupShowName": "服务器发现",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "sTaskManager",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/discover/sTaskManager.jsp",
+                        "popedomList": [
+                            "scantarget"
+                        ]
+                    },
+                    {
+                        "name": "sTaskHistory",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/discover/sTaskHistory.jsp",
+                        "popedomList": [
+                            "srvscanhis"
+                        ]
+                    },
+                    {
+                        "name": "pubCredetailMgr",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/discover/PubCredetialManager.jsp",
+                        "popedomList": [
+                            "scancredential"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Encrypt",
+                "groupShowName": "文件管控",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "encSeparation",
+                        "showName": "智能隔离",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/EncryptSeparation/EncryptSepGroupMgr.jsp",
+                        "popedomList": [
+                            "encsep"
+                        ]
+                    },
+                    {
+                        "name": "encAuthCode",
+                        "showName": "授权码",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/EncryptAuthCodeMgr.jsp",
+                        "popedomList": [
+                            "encauthcode"
+                        ]
+                    },
+                    {
+                        "name": "watermarkCode",
+                        "showName": "水印提取",
+                        "level": "2",
+                        "pagePath": "dlp/Console/manage/endpoint-encrypt/other/WatermarkCodeMgr.jsp",
+                        "popedomList": [
+                            "encrypt"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "manage"
+        ]
+    },
+    {
+        "name": "statistics",
+        "showName": "审计",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-4",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "name": "Detect",
+                "groupShowName": "风险",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EndpointRisk",
+                        "showName": "终端",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/Risk/EventStatistics.jsp",
+                        "popedomList": [
+                            "auditrisk"
+                        ]
+                    },
+                    {
+                        "name": "MonitorRisk",
+                        "showName": "网络",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/Risk/EventStatistics.jsp?type=monitor",
+                        "popedomList": [
+                            "auditrisk"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect",
+                "groupShowName": "事件",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EndpointEventStatistics",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/EventStatistics.jsp",
+                        "popedomList": [
+                            "auditevent"
+                        ]
+                    },
+                    {
+                        "name": "MonitorEventStatistics",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/EventStatistics.jsp?type=monitor",
+                        "popedomList": [
+                            "auditevent"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "EPDataRisk",
+                "groupShowName": "资产",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "DataAssertsStatistics",
+                        "showName": "全域资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/data-asserts/DataAssertsStatistics.jsp",
+                        "popedomList": [
+                            "auditassert"
+                        ]
+                    },
+                    {
+                        "name": "DeviceDataAssertsStatistics",
+                        "showName": "终端资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/data-asserts/DeviceDataAssertsStatistics.jsp",
+                        "popedomList": [
+                            "auditassert"
+                        ]
+                    },
+                    {
+                        "name": "ServerDataAssertsStatistics",
+                        "showName": "服务器资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/data-asserts/srvscan/ServerDataAssertsStatistics.jsp",
+                        "popedomList": [
+                            "auditassert"
+                        ]
+                    },
+                    {
+                        "name": "SearchDataAsserts",
+                        "showName": "资产检索",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/search/SearchDataAssets.jsp",
+                        "popedomList": [
+                            "auditassert"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Detect",
+                "groupShowName": "样本中心",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "SampleFileMgr",
+                        "showName": "样本文件",
+                        "level": "2",
+                        "pagePath": "dlp/Console/sampleFile/fileMgr/SampleFileMgr.jsp",
+                        "popedomList": [
+                            "auditassert"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Encrypt",
+                "groupShowName": "文件安全",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EncryptLog",
+                        "showName": "使用日志",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/EncryptLog.jsp",
+                        "popedomList": [
+                            "enclog"
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupShowName": "系统",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "SysOpLog",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/SysOpLog.jsp",
+                        "popedomList": [
+                            "syslog"
+                        ]
+                    },
+                    {
+                        "name": "EPLoginLog",
+                        "showName": "终端登录",
+                        "level": "2",
+                        "pagePath": "dlp/Console/stats/statistics/endpoint/UserLoginLog.jsp",
+                        "popedomList": [
+                            "syslog"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "audit"
+        ]
+    },
+    {
+        "name": "reports",
+        "showName": "报表",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-5",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "name": "Detect",
+                "groupShowName": "报表订阅",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "EndpointReportTake",
+                        "showName": "终端事件",
+                        "level": "2",
+                        "pagePath": "dlp/Console/report/ReportTake.jsp",
+                        "popedomList": [
+                            "reporttake"
+                        ]
+                    },
+                    {
+                        "name": "MonitorReportTake",
+                        "showName": "网络事件",
+                        "level": "2",
+                        "pagePath": "dlp/Console/report/ReportTake.jsp?type=monitor",
+                        "popedomList": [
+                            "reporttake"
+                        ]
+                    },
+                    {
+                        "name": "AssertReportTake",
+                        "showName": "终端资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/report/ReportTake.jsp?type=assert",
+                        "popedomList": [
+                            "reporttake"
+                        ]
+                    },
+                    {
+                        "name": "ScanReportTake",
+                        "showName": "服务器资产",
+                        "level": "2",
+                        "pagePath": "dlp/Console/report/ReportTake.jsp?type=scan",
+                        "popedomList": [
+                            "reporttake"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "report"
+        ]
+    },
+    {
+        "name": "system",
+        "showName": "系统",
+        "isDefault": true,
+        "isEnable": true,
+        "icon": "nav-icon icon-6",
+        "level": "0",
+        "functionGroupList": [
+            {
+                "groupShowName": "服务器管理",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "UserManager",
+                        "showName": "账户管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/userrole/UserAndRoleMgr.jsp",
+                        "popedomList": [
+                            "userrole"
+                        ]
+                    },
+                    {
+                        "name": "SystemConfig",
+                        "showName": "参数设置",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/config/SysConfig.jsp",
+                        "popedomList": [
+                            "srvparam"
+                        ]
+                    },
+                    {
+                        "name": "RunningStatus",
+                        "showName": "运行状态",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/running/RunningStatus.jsp",
+                        "popedomList": [
+                            "srvstatus"
+                        ]
+                    },
+                    {
+                        "name": "DataClean",
+                        "showName": "数据清理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/datamgr/DataClean.jsp",
+                        "popedomList": [
+                            "srvdataclr"
+                        ]
+                    },
+                    {
+                        "name": "DataStoreMgr",
+                        "showName": "存储管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/datamgr/StoreMgr.jsp",
+                        "popedomList": [
+                            "srvdataclr"
+                        ]
+                    },
+                    {
+                        "name": "BackupConfig",
+                        "showName": "数据备份",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/serverconfig/BackupConfig.jsp",
+                        "popedomList": [
+                            "srvparam"
+                        ]
+                    },
+                    {
+                        "name": "ServerLoad",
+                        "showName": "动态扩展",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/serverload/ServerLoadMgr.jsp",
+                        "popedomList": [
+                            "srvparam"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Monitor",
+                "groupShowName": "网络服务器",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "NetMonitorUpdate",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/serverconfig/NetmonitorUpdateConfig.jsp",
+                        "popedomList": [
+                            "monsrvupdate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Endpoint",
+                "groupShowName": "终端管理",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "DeviceUpdateConfig",
+                        "showName": "Windows终端部署管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/DeviceInstPackMgr.jsp",
+                        "popedomList": [
+                            "agentupdate"
+                        ]
+                    },
+                    {
+                        "name": "LinuxEndpointDeployMgr",
+                        "showName": "Linux终端部署管理",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/Linux/LinuxEndpointDeployMgr.jsp",
+                        "popedomList": [
+                            "agentupdate"
+                        ]
+                    },
+                    {
+                        "name": "SystemRunParam",
+                        "showName": "临时占位",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/serverconfig/RuntimeParamConfig.jsp",
+                        "popedomList": [
+                            "agentparam"
+                        ]
+                    },
+                    {
+                        "name": "EndpointLog",
+                        "showName": "运行日志下载",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/device/DeviceLog/DeviceLogStat.jsp",
+                        "popedomList": [
+                            "agentparam"
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupShowName": "关于",
+                "icon": "iconfont icon-xitong",
+                "level": "1",
+                "functionList": [
+                    {
+                        "name": "ToolDownload",
+                        "showName": "工具下载",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/about/ResourceDownload.jsp",
+                        "popedomList": [
+                            "tooldown"
+                        ]
+                    },
+                    {
+                        "name": "aboutServer",
+                        "showName": "关于服务器",
+                        "level": "2",
+                        "pagePath": "dlp/Console/system/about/ServerAbout.jsp",
+                        "popedomList": [
+                            "srvlic"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "roleCodeList": [
+            "system"
+        ]
+    }
+]

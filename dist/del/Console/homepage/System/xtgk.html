@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>智汇数据治理与安全防护平台-系统概况</title>
+    <meta name="keywords" content="智汇数据治理与安全防护平台-系统概况">
+
+
+
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link href="../../css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link href="../../css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link rel="stylesheet" href="../../fonts/font_cd2l80w0vi/iconfont.css">
+
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/animate.css" rel="stylesheet">
+
+
+    <link href="../../css/style.css?v=4.1.0" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/public.css">
+
+    <link rel="stylesheet" href="../../css/xtgk.css">
+
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+</head>
+
+<body class="unit-bg">
+    <div class="page-scroll">
+        <div class="container-fluid">
+            <div class="row row-1">
+                <div class="col-30 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-icon011"></i> 用户
+                            </div>
+                        </div>
+                        <div class="mo-main">
+                            <div class="left-chart resize-charts" id="yhzxlChart">
+                            </div>
+                            <div class="right-number">
+                                <div class="data-item">
+                                    <div class="data-key">在线数量</div>
+                                    <div class="data-val" id="onlineNumber">0</div>
+                                </div>
+                                <div class="data-item">
+                                    <div class="data-key">用户数量</div>
+                                    <div class="data-val" id="userNumber">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-30 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-zhongduan1"></i> 终端
+                            </div>
+                        </div>
+                        <div class="mo-main">
+                            <div class="left-chart resize-charts" id="zdzxlChart">
+                            </div>
+                            <div class="right-number">
+                                <div class="data-item">
+                                    <div class="data-key">在线数量</div>
+                                    <div class="data-val" id="deviceonlineNumber">0</div>
+                                </div>
+                                <div class="data-item">
+                                    <div class="data-key">终端数量</div>
+                                    <div class="data-val" id="deviceNumber">0</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-40 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-bingzhuangtu"></i> 资源使用率
+                            </div>
+                        </div>
+                        <div class="mo-main" id="zysylChart">
+                            <ul class="zb-bar">
+                                <li id="cpuUsage">
+                                    <span class="bar-name">CPU</span>
+                                    <div class="bar-wrap">
+                                        <span class="bar-inner"></span>
+                                    </div>
+                                    <span class="bar-percentage">0%</span>
+                                </li>
+                                <li id="memUsage">
+                                    <span class="bar-name">内存</span>
+                                    <div class="bar-wrap">
+                                        <span class="bar-inner"></span>
+                                    </div>
+                                    <span class="bar-percentage">0%</span>
+                                </li>
+                                <li id="diskUsage">
+                                    <span class="bar-name">硬盘</span>
+                                    <div class="bar-wrap">
+                                        <span class="bar-inner"></span>
+                                    </div>
+                                    <span class="bar-percentage">0%</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="col-30 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-lixian"></i> 离线终端
+                            </div>
+                        </div>
+                        <div class="mo-main">
+                            <div class="list-scroll">
+                                <div class="rank-list no-arrow">
+                                    <ul id="offlinedevList">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-30 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-caozuoxitong"></i> 操作系统统计
+                            </div>
+                        </div>
+                        <div class="mo-main resize-charts" id="czxttjChart">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-40 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-banben"></i> 终端部署版本统计
+                            </div>
+                        </div>
+                        <div class="mo-main resize-charts" id="zdbsbbtjChart">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row row-3">
+                <div class="col-30 mo-box">
+                    <div class="mo-box-inner has-fotter" id="riskUser">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-fengxian1"></i> 风险用户
+                            </div>
+                            <div class="toggle-btn">
+                                <ul>
+                                    <li class="toggle-item selected" data-for="RiskUserRankList">今日</li>
+                                    <li class="toggle-item" data-for="RiskUserRankList2">七日</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mo-main">
+                            <div class="list-scroll">
+                                <div class="rank-list no-arrow">
+                                    <ul id="riskUserlist">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mo-fotter">
+                            <ul class="statistical-data">
+                                <li class="col-sm-6">
+                                    <div class="stat-tit">
+                                        <i>今日</i>风险用户
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="TodayRiskUserCount">0</i>
+                                            <span>人</span>
+                                        </div>
+                                        <div class="rate" id="TodayRiskUserCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-6">
+                                    <div class="stat-tit">
+                                        <i>七日</i>风险用户
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="SevenDayRiskUserCount">0</i>
+                                            <span>人</span>
+                                        </div>
+                                        <div class="rate" id="SevenDayRiskUserCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50 mo-box">
+                    <div class="mo-box-inner has-fotter no-header">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-qushifenxi1"></i> 趋势分析
+                            </div>
+                        </div>
+                        <div class="mo-main resize-charts" id="qsfxChart">
+
+                        </div>
+                        <div class="mo-fotter">
+                            <ul class="statistical-data">
+                                <li class="col-sm-3">
+                                    <div class="stat-tit">
+                                        <i>今日</i>风险
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="TodayRiskTotalCount">0</i>
+                                            <span>起</span>
+                                        </div>
+                                        <div class="rate" id="TodayRiskTotalCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-3">
+                                    <div class="stat-tit">
+                                        <i>七日</i>风险
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="SevenDayRiskTotalCount">0</i>
+                                            <span>起</span>
+                                        </div>
+                                        <div class="rate" id="SevenDayRiskTotalCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-3">
+                                    <div class="stat-tit">
+                                        <i>今日</i>事件
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="TodayEventTotalCount">0</i>
+                                            <span>件</span>
+                                        </div>
+                                        <div class="rate" id="TodayEventTotalCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-3">
+                                    <div class="stat-tit">
+                                        <i>七日</i>事件
+                                    </div>
+                                    <div class="stat-main">
+                                        <div class="stat-number">
+                                            <i id="SevenDayEventTotalCount">0</i>
+                                            <span>件</span>
+                                        </div>
+                                        <div class="rate" id="SevenDayEventTotalCountUp">
+                                            0%
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-20 mo-box">
+                    <div class="mo-box-inner">
+                        <div class="mo-header">
+                            <div class="mo-tit">
+                                <i class="iconfont icon-fuwuqi1"></i> 服务器信息
+                            </div>
+                            <div class="mo-form">
+                                <select class="form-control" name="account">
+                                    <option>服务器1</option>
+                                    <option>服务器2</option>
+                                    <option>服务器3</option>
+                                    <option>服务器4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mo-main">
+                            <ul class="servesmsg-list" id="serverInfolist">
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="../../js/jquery.min.js?v=2.1.4"></script>
+    <script src="../../js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!--slimscroll滚动条插件-->
+    <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+
+    <!-- iCheck -->
+    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+            });
+        });
+    </script>
+
+    <!-- axios -->
+    <script src="../../js/plugins/axios/axios.min.js"></script>
+
+
+    <script src="../../js/plugins/echarts/echarts.js"></script>
+    <script src="../../js/echartsStyle.js"></script>
+
+    <script src="../../js/public.js"></script>
+
+    <script src="./js/xtgk.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+
+</body>
+
+</html>

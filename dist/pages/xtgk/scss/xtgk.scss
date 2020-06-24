@@ -1,0 +1,426 @@
+.row {
+    &.row-2 {
+        .mo-box-inner {
+            height: 234px;
+        }
+    }
+    &.row-3 {
+        .mo-box-inner {
+            height: 304px;
+        }
+    }
+}
+
+.mo-main {
+    position: relative;
+    .left-chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 120px;
+        bottom: 0;
+    }
+
+    .right-number {
+        position: absolute;
+        width: 120px;
+        height: 100%;
+        right: 0;
+        padding-right: 40px;
+        padding-top: 10px;
+        .data-item {
+            width: 100%;
+            margin-bottom: 10px;
+            .data-key {
+                width: 100%;
+                text-align: right;
+                font-size: 12px;
+                line-height: 20px;
+                color: #717171;
+            }
+
+            .data-val {
+                width: 100%;
+                text-align: right;
+
+                font-size: 18px;
+                line-height: 24px;
+                color: #1a1818;
+            }
+        }
+    }
+}
+
+// 关于列表排名
+.rank-list {
+    li {
+        div {
+            vertical-align: top;
+        }
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0 14px;
+        .rank-number {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #b9b9b9;
+            overflow: hidden;
+            margin-top: 7px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+        }
+
+        .rank-msg {
+            display: inline-block;
+            color: #292524;
+            padding-left: 4px;
+
+            .rank-name {
+                display: inline-block;
+            }
+            .rank-ip {
+                display: inline-block;
+                color: #777676;
+            }
+        }
+
+        .attach {
+            float: right;
+            text-align: right;
+        }
+
+        .arrow {
+            display: none;
+            float: right;
+            width: 20px;
+            height: 20px;
+            background-image: url(../../../images/arraw.png);
+            background-repeat: no-repeat;
+            margin: 4px 0 0 6px;
+
+            &.arrow-top {
+                display: block;
+                background-position: 0 0;
+            }
+            &.arrow-bot {
+                display: block;
+                background-position: 0 -20px;
+            }
+        }
+
+        &:nth-child(1) {
+            .rank-number {
+                background: #fe5861;
+            }
+            .attach {
+                color: #fe5861;
+            }
+        }
+        &:nth-child(2) {
+            .rank-number {
+                background: #fdb315;
+            }
+            .attach {
+                color: #fdb315;
+            }
+        }
+        &:nth-child(3) {
+            .rank-number {
+                background: #36a3fc;
+            }
+            .attach {
+                color: #36a3fc;
+            }
+        }
+    }
+
+    &.no-arrow li .arrow {
+        display: none;
+    }
+}
+
+//关于切换按钮
+.toggle-btn {
+    float: right;
+    ul {
+        padding-top: 10px;
+        padding-right: 10px;
+        li {
+            float: left;
+            font-size: 12px;
+            line-height: 20px;
+            height: 20xp;
+            padding: 0 8px;
+            border-radius: 10px;
+            margin-left: 4px;
+            color: #6d6767;
+            cursor: pointer;
+            &.selected {
+                color: #fff;
+                background: #50a8fc;
+            }
+        }
+    }
+}
+
+//关于比率列表
+.statistical-data {
+    width: 100%;
+    padding: 0 6px;
+    li {
+        padding: 10px 20px;
+        .stat-tit {
+            font-size: 14px;
+            line-height: 26px;
+            color: #908c8b;
+            i {
+                color: #292524;
+            }
+        }
+
+        .stat-main {
+            width: 100%;
+            .stat-number {
+                float: left;
+                i {
+                    display: inline-block;
+                    vertical-align: bottom;
+                    font-size: 20px;
+                    color: #292524;
+                }
+                span {
+                    display: inline-block;
+                    vertical-align: bottom;
+                    font-size: 12px;
+                    color: #b9b9b9;
+                }
+            }
+
+            .rate {
+                float: right;
+                font-size: 12px;
+                padding-top: 6px;
+                color: #999999;
+                &::before {
+                    font: normal normal normal 20px/1 FontAwesome;
+                    font-size: 16px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    content: "\f07e";
+                    vertical-align: -2px;
+                    padding-right: 4px;
+                }
+                &.rate-top {
+                    color: #f4313b;
+                    &::before {
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        content: "\f062";
+                        vertical-align: middle;
+                    }
+                }
+
+                &.rate-bot {
+                    color: #42da86;
+                    &::before {
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        content: "\f063";
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 1px;
+            height: 45px;
+            background: #e4dada;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            right: 0;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+//关于自定义占比的柱状图
+
+.zb-bar {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    li {
+        height: 32px;
+        width: 100%;
+        position: relative;
+        font-size: 14px;
+        line-height: 32px;
+        margin-top: 2px;
+
+        .bar-name {
+            display: block;
+            color: #6c6c6c;
+            width: 44px;
+            text-align: left;
+        }
+
+        .bar-wrap {
+            position: absolute;
+            height: 10px;
+            left: 50px;
+            right: 50px;
+            top: 11px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            overflow: hidden;
+
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            .bar-inner {
+                width: 0%;
+                height: 100%;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#72e1a4+0,02d05f+100 */
+                background: rgb(114, 225, 164); /* Old browsers */
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(114, 225, 164, 1) 0%,
+                    rgba(2, 208, 95, 1) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(114, 225, 164, 1) 0%,
+                    rgba(2, 208, 95, 1) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    rgba(114, 225, 164, 1) 0%,
+                    rgba(2, 208, 95, 1) 100%
+                ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72e1a4', endColorstr='#02d05f',GradientType=1 ); /* IE6-9 */
+
+                float: left;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+        }
+
+        .bar-percentage {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 46px;
+            text-align: right;
+            color: #23bf6a;
+        }
+
+        &.warning-bg {
+            .bar-wrap > .bar-inner {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7a7ab+0,ff525c+100 */
+                background: rgb(247, 167, 171); /* Old browsers */
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(247, 167, 171, 1) 0%,
+                    rgba(255, 82, 92, 1) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(247, 167, 171, 1) 0%,
+                    rgba(255, 82, 92, 1) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    rgba(247, 167, 171, 1) 0%,
+                    rgba(255, 82, 92, 1) 100%
+                ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a7ab', endColorstr='#ff525c',GradientType=1 ); /* IE6-9 */
+            }
+            .bar-percentage {
+                color: #ff525c;
+            }
+        }
+
+        &.orange-bg {
+            .bar-wrap > .bar-inner {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2e092+0,fecd1b+100 */
+                background: rgb(242, 224, 146); /* Old browsers */
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(242, 224, 146, 1) 0%,
+                    rgba(254, 205, 27, 1) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(242, 224, 146, 1) 0%,
+                    rgba(254, 205, 27, 1) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    rgba(242, 224, 146, 1) 0%,
+                    rgba(254, 205, 27, 1) 100%
+                ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e092', endColorstr='#fecd1b',GradientType=1 ); /* IE6-9 */
+            }
+            .bar-percentage {
+                color: #fea11d;
+            }
+        }
+    }
+}
+
+//关于属性列表
+.servesmsg-list {
+    padding-top: 4px;
+    li.msg-item {
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 24px;
+        padding: 4px 20px;
+        height: 36px;
+        i {
+            display: inline-block;
+            color: #c0c0c0;
+            vertical-align: middle;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .msg-key {
+            display: inline-block;
+            vertical-align: middle;
+            color: #2b2929;
+            float: left;
+            font-size: 14px;
+        }
+
+        .msg-val {
+            float: right;
+            color: #3ca5fa;
+            font-size: 14px;
+        }
+    }
+}

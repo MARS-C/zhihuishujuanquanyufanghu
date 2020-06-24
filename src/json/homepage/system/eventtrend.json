@@ -1,0 +1,42 @@
+{
+    "TotalEventCount": 0, 
+    "TotalRiskCount": 0, 
+    
+    "TodayRiskTotalCount": 1, 
+    "TodayRiskTotalCountUp": 100, 
+    "SevenDayRiskTotalCount": 1, 
+    "SevenDayRiskTotalCountUp": 0, 
+    "TodayEventTotalCount": 65, 
+    "TodayEventTotalCountUp": -90, 
+    "SevenDayEventTotalCount": 1, 
+    "SevenDayEventTotalCountUp": 20, 
+    "EventTrendDatas": [
+        187, 
+        137, 
+        61, 
+        27, 
+        15, 
+        0, 
+        0
+    ], 
+    "RiskTrendDatas": [
+        0, 
+        1, 
+        0, 
+        0, 
+        0, 
+        0, 
+        0
+    ], 
+    "Dates": [
+        "2020-06-01", 
+        "2020-06-02", 
+        "2020-06-03", 
+        "2020-06-04", 
+        "2020-06-05", 
+        "2020-06-06", 
+        "2020-06-07"
+    ], 
+    "code": "", 
+    "name": ""
+}

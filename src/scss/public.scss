@@ -1,0 +1,135 @@
+@import "Preset";
+//关于bootstrap dropdown-menu插件样式更改
+
+.dropdown-menu {
+    border: medium none;
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 4px 10px;
+    min-width: 200px;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.3);
+    &.flot-right {
+        left: auto;
+        right: 4px;
+    }
+
+    &.sm-dro {
+        min-width: 120px;
+    }
+}
+
+.unit-bg {
+    width: 100%;
+    height: 100%;
+    background: none;
+    overflow: hidden;
+}
+
+.mo-box {
+    min-height: 20px;
+    padding: 10px;
+    .mo-box-inner {
+        display: block;
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 1px 7px -4px rgba(0, 0, 0, 0.4);
+        position: relative;
+
+        .mo-header {
+            height: 40px;
+            width: 100%;
+            .mo-tit {
+                float: left;
+                font-size: 14px;
+                line-height: 38px;
+                color: #292524;
+                i {
+                    display: inline-block;
+                    vertical-align: 0px;
+                    color: #a8afbb;
+                }
+                padding-left: 10px;
+            }
+
+            .mo-form{
+                float: right;
+                
+                padding: 4px 10px 0 0;
+                .form-control{
+                    border: none;
+                }
+            }
+        }
+
+        .mo-main {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            bottom: 10px;
+        }
+
+        .mo-fotter {
+            height: 80px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &.has-fotter {
+            .mo-main {
+                bottom: 80px;
+                
+            }
+        }
+
+        &.no-header{
+            .mo-header{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .mo-main {
+                top: 0;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .col-35 {
+        width: 35%;
+        float: left;
+    }
+
+    .col-20 {
+        width: 20%;
+        float: left;
+    }
+    .col-30 {
+        width: 30%;
+        float: left;
+    }
+
+    .col-40 {
+        width: 40%;
+        float: left;
+    }
+
+    .col-50{
+        width: 50%;
+        float: left; 
+    }
+}

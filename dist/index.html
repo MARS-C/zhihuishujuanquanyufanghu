@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>智汇数据治理与安全防护平台</title>
+    <meta name="keywords" content="智汇数据治理与安全防护平台">
+
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/font_cd2l80w0vi/iconfont.css">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
+
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <script>if (window.top !== window.self) { window.top.location = window.location; }</script>
+</head>
+
+<body class="page-bg">
+    <div class="menu trans">
+        <div class="logo">
+            <i class="logo-icon">
+                <img src="./images/logo.png" alt="">
+            </i>
+            <span>
+                智汇数据治理与<br />安全防护平台
+            </span>
+        </div>
+        <div class="menu-list">
+            <div class="menu-scroll">
+                <div id="sideMenu">
+
+                    <ul class="side-menu">
+                    </ul>
+                    <ul class="fold-sidemenu"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main trans">
+        <div class="header">
+            <ul class="nav" id="navTab">
+
+            </ul>
+
+            <ul class="info-btn">
+                <li class="dropdown info-item">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="iconfont icon-gaojing"></i> <span class="label">16</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-messages flot-right animated fadeInUp">
+                        <ul class="msg-list">
+                            <li class="msg-item">
+
+                            </li>
+                        </ul>
+                        <div class="text-center link-block ">
+                            <a class="J_menuItem" href="">
+                                <i class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="dropdown info-item">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="iconfont icon-gaojing"></i> <span class="label">6</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-messages flot-right  animated fadeInUp">
+                        <ul class="msg-list">
+                            <li class="msg-item">
+
+                            </li>
+                        </ul>
+                        <div class="text-center link-block ">
+                            <a class="J_menuItem" href="">
+                                <i class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="dropdown info-item">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <div class="user-msg">
+
+                            <div class="user-pic">
+                                <img src="./images/a8.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                李娜
+                            </div>
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-messages sm-dro flot-right animated fadeInRight">
+                        <ul class="user-operate">
+                            <li>修改头像</li>
+                            <li>个人资料</li>
+                            <li>企业邮箱</li>
+                            <li>联系我们</li>
+                            <li class="have-border"><i class="fa fa-sign-out" aria-hidden="true"></i>退出登录</li>
+
+                        </ul>
+                    </div>
+
+                </li>
+
+            </ul>
+
+
+        </div>
+        <div class="contain">
+            <div class="crumbs">
+                <span class="menu-toggle" onclick="toggleMenu()">
+
+                </span>
+                <ul class="crumber-list">
+                    <li>主页</li>
+                    <li>系统</li>
+                    <li>系统概况</li>
+                </ul>
+            </div>
+
+            <div class="page-frame">
+                <iframe class="J_iframe" name="" width="100%" height="100%" src="pages/xtgk/xtgk.html" frameborder="0"
+                    seamless></iframe>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!--slimscroll滚动条插件-->
+    <script src="./js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script>
+        $(function () {
+            $(".menu-scroll").length > 0 && $(".menu-scroll").slimScroll({
+                width: '100%', //可滚动区域宽度
+                height: '100%', //可滚动区域高度
+                size: '4px', //滚动条宽度，即组件宽度
+                color: '#fff', //滚动条颜色
+                position: 'left', //组件位置：left/right
+                distance: '0px', //组件与侧边之间的距离
+                start: 'top', //默认滚动位置：top/bottom
+                opacity: .3, //滚动条透明度
+                alwaysVisible: false, //是否 始终显示组件
+                disableFadeOut: true, //是否 鼠标经过可滚动区域时显示组件，离开时隐藏组件
+                railVisible: false, //是否 显示轨道
+                railColor: '#333', //轨道颜色
+                railOpacity: .2, //轨道透明度
+                railDraggable: true, //是否 滚动条可拖动
+                railClass: 'slimScrollRail', //轨道div类名 
+                barClass: 'slimScrollBar', //滚动条div类名
+                wrapperClass: 'slimScrollDiv', //外包div类名
+                allowPageScroll: true, //是否 使用滚轮到达顶端/底端时，滚动窗口
+                wheelStep: 20, //滚轮滚动量
+                touchScrollStep: 200, //滚动量当用户使用手势
+                borderRadius: '0px', //滚动条圆角
+                railBorderRadius: '7px' //轨道圆角
+            });
+        })    
+    </script>
+
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+            });
+        });
+    </script>
+
+    <!-- axios -->
+    <script src="./js/plugins/axios/axios.min.js"></script>
+
+    <script src="./js/plugins/menu/jquery.yqdz.menu.js"></script>
+
+    <script src="./js/index.js"></script>
+
+
+
+
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+
+</body>
+
+</html>

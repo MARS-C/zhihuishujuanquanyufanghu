@@ -1,0 +1,71 @@
+{
+    "TotalCount": 0,
+    "TodayRiskUserCount": 1,
+    "TodayRiskUserCountUp": 100,
+    "SevenDayRiskUserCount": 12,
+    "SevenDayRiskUserCountUp": 0,
+    "RiskUserRankList": [
+        {
+            "UserRealName": "张三",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 6,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "李四",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 3,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "王五",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 2,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "赵六",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 1,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "陈七",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 1,
+            "code": "",
+            "name": ""
+        }
+    ],
+    "RiskUserRankList2": [
+        {
+            "UserRealName": "李四",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 1,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "赵六",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 1,
+            "code": "",
+            "name": ""
+        },{
+            "UserRealName": "陈七",
+            "RankingRose": 0,
+            "RiskScore": 0,
+            "RiskEventCount": 1,
+            "code": "",
+            "name": ""
+        }
+    ],
+    "code": "",
+    "name": ""
+}

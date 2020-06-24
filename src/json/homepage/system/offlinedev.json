@@ -1,0 +1,56 @@
+{
+    "TotalCount": 0, 
+    "OfflineDevList": [
+        {
+            "UserRealName": "张东", 
+            "DevIP": "10.26.15.175", 
+            "OfflineDays": 127, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "李四", 
+            "DevIP": "10.26.15.176", 
+            "OfflineDays": 119, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "王五", 
+            "DevIP": "10.26.15.119", 
+            "OfflineDays": 117, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "赵六", 
+            "DevIP": "10.26.15.234", 
+            "OfflineDays": 100, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "王皓", 
+            "DevIP": "10.26.15.123", 
+            "OfflineDays": 90, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "吴冰", 
+            "DevIP": "10.26.15.146", 
+            "OfflineDays": 80, 
+            "code": "", 
+            "name": ""
+        }, 
+        {
+            "UserRealName": "柳岩", 
+            "DevIP": "10.26.15.188", 
+            "OfflineDays": 40, 
+            "code": "", 
+            "name": ""
+        }
+    ], 
+    "code": "", 
+    "name": ""
+}

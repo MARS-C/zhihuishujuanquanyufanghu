@@ -1,0 +1,517 @@
+/*headericon*/
+.nav-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/navicon.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.nav-icon.icon-0 {
+  background-position: 0px 0;
+}
+
+.nav-icon.icon-1 {
+  background-position: -30px 0;
+}
+
+.nav-icon.icon-2 {
+  background-position: -60px 0;
+}
+
+.nav-icon.icon-3 {
+  background-position: -90px 0;
+}
+
+.nav-icon.icon-4 {
+  background-position: -120px 0;
+}
+
+.nav-icon.icon-5 {
+  background-position: -150px 0;
+}
+
+.nav-icon.icon-6 {
+  background-position: -180px 0;
+}
+
+.page-bg {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #e8e9f9 url(../images/pagebg.png) no-repeat center top/contain;
+  position: relative;
+}
+
+.page-bg .menu {
+  width: 190px;
+  height: 100%;
+  background: #3a4557;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-bg .menu .logo {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.page-bg .menu .logo::after {
+  content: "";
+  width: 146px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background: url(../images/logoline.png) repeat-x;
+}
+
+.page-bg .menu .logo i.logo-icon {
+  display: block;
+  width: 40px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+.page-bg .menu .logo i.logo-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.page-bg .menu .logo span {
+  display: block;
+  width: 190px;
+  overflow: hidden;
+  padding: 20px 10px 0 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.page-bg .menu .menu-list {
+  position: absolute;
+  width: 100%;
+  top: 180px;
+  left: 0;
+  bottom: 10px;
+}
+
+.page-bg .menu .menu-list .side-menu {
+  width: 190px;
+  padding: 10px 0;
+}
+
+.page-bg .menu .menu-list .side-menu li {
+  padding: 2px 0;
+  position: relative;
+  min-height: 42px;
+}
+
+.page-bg .menu .menu-list .side-menu a {
+  display: block;
+  box-sizing: border-box;
+  height: 38px;
+  width: 100%;
+  font: 14px/38px "microsoft yahei";
+  color: #dedede;
+  position: relative;
+}
+
+.page-bg .menu .menu-list .side-menu a span.checkbox {
+  display: none;
+}
+
+.page-bg .menu .menu-list .side-menu a i {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+.page-bg .menu .menu-list .side-menu a .arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 99;
+}
+
+.page-bg .menu .menu-list .side-menu a .fa.arrow:before {
+  content: "\f0da";
+}
+
+.page-bg .menu .menu-list .side-menu a .text {
+  display: inline-block;
+}
+
+.page-bg .menu .menu-list .side-menu a.active {
+  color: #fff;
+}
+
+.page-bg .menu .menu-list .side-menu a.active .fa.arrow:before {
+  content: "\f0d7";
+  color: #16a9fa;
+}
+
+.page-bg .menu .menu-list .side-menu a.fater-node.seleBtn {
+  color: #fff;
+}
+
+.page-bg .menu .menu-list .side-menu a.root-node.seleBtn {
+  position: relative;
+  background-color: rgba(166, 198, 254, 0.23);
+  color: #f9b106;
+  position: relative;
+}
+
+.page-bg .menu .menu-list .side-menu a.root-node.seleBtn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #2c9eff;
+  right: 0;
+  top: 0;
+}
+
+.page-bg .menu .menu-list .fold-sidemenu {
+  display: none;
+  width: 100%;
+}
+
+.page-bg .menu .menu-list .fold-sidemenu li {
+  text-align: center;
+  line-height: 60px;
+  color: #8a8a8a;
+}
+
+.page-bg .menu .menu-list .fold-sidemenu li i.iconfont {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.page-bg .main {
+  position: absolute;
+  left: 190px;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+
+.page-bg .main .header {
+  width: 100%;
+  height: 60px;
+  background: #4b68d9 url(../images/headerbg.png) no-repeat right center/contain;
+  box-shadow: rgba(68, 87, 164, 0.4) 0 1px 8px;
+  position: relative;
+}
+
+.page-bg .main .header::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-image: url(../images/leftline.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  opacity: 1;
+}
+
+.page-bg .main .header::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-image: url(../images/rightline.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  opacity: 1;
+}
+
+.page-bg .main .header .nav {
+  float: left;
+  height: 100%;
+}
+
+.page-bg .main .header .nav .nav-icon {
+  margin: 0 auto;
+}
+
+.page-bg .main .header .nav .nav-item {
+  float: left;
+  width: 60px;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.page-bg .main .header .nav .nav-item .nav-msg {
+  display: block;
+  font-size: 13px;
+  overflow: hidden;
+  color: #eef4fc;
+}
+
+.page-bg .main .header .nav .nav-item.selected .nav-msg {
+  color: #f9b106;
+}
+
+.page-bg .main .header .nav .nav-item.selected::after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.page-bg .main .header .info-btn {
+  float: right;
+}
+
+.page-bg .main .header .info-btn .info-item {
+  float: left;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info {
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 60px;
+  position: relative;
+  height: 60px;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .label {
+  line-height: 12px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  padding: 1px 5px;
+  position: absolute;
+  color: #fff;
+  background-color: #fd6770;
+  top: 12px;
+  min-height: 14px;
+  min-width: 20px;
+  text-align: center;
+  left: 50%;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .user-msg {
+  padding-top: 10px;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .user-msg .user-pic {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/userpic.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .user-msg .user-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .user-msg .user-name {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  color: #fff;
+  vertical-align: top;
+  padding: 0 6px;
+}
+
+.page-bg .main .header .info-btn .info-item .count-info .user-msg .fa {
+  font-size: 10px;
+  vertical-align: top;
+  padding-top: 11px;
+}
+
+.page-bg .main .header .info-btn .user-operate {
+  padding: 10px 0;
+}
+
+.page-bg .main .header .info-btn .user-operate li {
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #2b2b2b;
+  text-align: center;
+  cursor: pointer;
+}
+
+.page-bg .main .header .info-btn .user-operate li:hover {
+  color: #4664d5;
+}
+
+.page-bg .main .header .info-btn .user-operate li.have-border {
+  margin-top: 4px;
+  border-top: 1px solid #f5f5f5;
+  color: #3277dc;
+}
+
+.page-bg .main .header .info-btn .user-operate li.have-border i {
+  font-size: 14px;
+  padding-right: 4px;
+}
+
+.page-bg .main .contain {
+  position: absolute;
+  top: 80px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.page-bg .main .contain .crumbs {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.page-bg .main .contain .crumbs .menu-toggle {
+  float: left;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url(../images/menutoggle.png) no-repeat center center/auto;
+}
+
+.page-bg .main .contain .crumbs .crumber-list {
+  float: left;
+  padding-left: 10px;
+}
+
+.page-bg .main .contain .crumbs .crumber-list li {
+  float: left;
+  font-size: 12px;
+  color: #8ea0bf;
+  line-height: 40px;
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.page-bg .main .contain .crumbs .crumber-list li::after {
+  content: ">";
+  font-size: 10px;
+  color: #a5b3cc;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.page-bg .main .contain .crumbs .crumber-list li:last-child {
+  color: #508bf1;
+  font-weight: 400;
+}
+
+.page-bg .main .contain .crumbs .crumber-list li:last-child::after {
+  content: "";
+}
+
+.page-bg .main .contain .page-frame {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  bottom: 0;
+  background: #f7f8fc;
+  border-radius: 4px;
+}
+
+.page-bg.menu-close .menu {
+  width: 70px;
+}
+
+.page-bg.menu-close .menu .logo {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.page-bg.menu-close .menu .logo::after {
+  content: "";
+  width: 50px;
+}
+
+.page-bg.menu-close .menu .logo i.logo-icon {
+  display: block;
+  width: 40px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+.page-bg.menu-close .menu .logo span {
+  display: none;
+}
+
+.page-bg.menu-close .menu .menu-list {
+  top: 110px;
+}
+
+.page-bg.menu-close .menu .menu-list .side-menu {
+  display: none !important;
+}
+
+.page-bg.menu-close .menu .menu-list .fold-sidemenu {
+  display: block;
+}
+
+.page-bg.menu-close .main {
+  left: 70px;
+}

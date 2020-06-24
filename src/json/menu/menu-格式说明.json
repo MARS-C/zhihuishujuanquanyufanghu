@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Homepage",//key 
+        "showName": "主页",//一级菜单显示名称 
+        "isDefault": true, //目前都为true
+        "isEnable": true, //目前都为true
+        "functionGroupList": [
+            {
+                "name": "Endpoint|Encrypt", 
+                "groupShowName": "系统", //二级菜单显示名称
+                "functionList": [
+                    {
+                        "name": "SysOverView", 
+                        "showName": "系统概况",//叶子菜单显示名称 
+                        "pagePath": "dlp/Console/homepage/System/SystemOverView.jsp", //叶子菜单链接
+                        "popedomList": [
+                            "situation"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "roleCodeList": [
+            "situation"
+        ]
+    }
+]

@@ -1,0 +1,195 @@
+/* ERROR & LOGIN & LOCKSCREEN*/
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/loginbg.png) no-repeat center center/100%;
+}
+
+.login-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-box .login-logo {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+}
+
+.login-box .login-logo i.login-pic {
+  display: inline-block;
+  vertical-align: middle;
+  width: 56px;
+  height: 51px;
+  background-image: url(../images/logo.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.login-box .login-logo p.login-msg {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.login-box .login-diagram {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  display: block;
+  width: 50%;
+  max-width: 865px;
+  height: auto;
+  margin-top: 2%;
+  left: 6%;
+}
+
+.login-box .middle-box {
+  display: block;
+  max-width: 400px;
+  z-index: 100;
+  position: absolute;
+  width: 480px;
+  height: 530px;
+  background: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  padding: 0 40px;
+}
+
+.login-box .middle-box img.welcome-msg {
+  display: block;
+  margin: 60px auto 0 auto;
+}
+
+.login-box .middle-box .login-input-tab {
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 40px;
+}
+
+.login-box .middle-box .login-input-tab .tab-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 48px;
+  color: #949494;
+  width: 90px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-box .middle-box .login-input-tab .tab-item.selected {
+  color: #0e0e0e;
+}
+
+.login-box .middle-box .login-input-tab .tab-item.selected::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background: #45a0ff;
+}
+
+.login-box .middle-box .login-form {
+  padding-top: 40px;
+}
+
+.login-box .middle-box .login-form .form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.login-box .middle-box .login-form .form-group label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 6px;
+}
+
+.login-box .middle-box .login-form .form-group label i {
+  font-size: 20px;
+  color: #e6e6e6;
+}
+
+.login-box .middle-box .login-form .rember-paswd {
+  margin-bottom: 40px;
+}
+
+.login-box .middle-box .login-form .rember-paswd label {
+  padding-left: 0;
+}
+
+.login-box .middle-box .login-form .rember-paswd label .checks-msg {
+  font-size: 14px;
+  color: #6e6f70;
+  padding-left: 10px;
+}
+
+.login-box .middle-box .login-form .login-btn {
+  margin-top: 20px;
+}
+
+.login-box .middle-box .login-form .form-control,
+.login-box .middle-box .login-form .single-line {
+  border: none;
+  border-bottom: 1px solid #dbe5eb;
+  padding-left: 32px;
+}
+
+.login-box .middle-box .login-form .form-control:focus,
+.login-box .middle-box .login-form .single-line:focus {
+  border-color: #16a9fa !important;
+}
+
+.login-box .middle-box .login-form .btn-success {
+  background-color: #16a9fa;
+  border-color: #16a9fa;
+}
+
+.login-box .middle-box .company {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: 20px;
+  color: #bdbdbd;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.login-box .middle-box .company a {
+  font-size: 14px;
+}
+
+.login-box .middle-box .company a:hover {
+  color: #666666;
+}
